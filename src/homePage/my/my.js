@@ -10,7 +10,7 @@ export default class Mys extends Component {
         super(props)
         this.state = {
         }
-     
+     console.log(this.props.location.state)
     }
 
     //在完成首次渲染之前调用（首次加载或刷新页面），根据url的hash值改变state，具体表现为侧边栏选中项与页面渲染页相对应
