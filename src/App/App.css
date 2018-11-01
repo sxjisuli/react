@@ -1,12 +1,7 @@
-/*.homePage {
+.mainBox {
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-}*/
-
-.mainBox {
-    flex: 1
+    flex: 1;
 }
 
 footer {
@@ -17,9 +12,7 @@ footer {
     left: 0rem;
     background: #fff;
     z-index: 22;
-    /*border-top: 0.01rem solid #ccc;*/
     box-shadow: 0rem 0.01rem 0.05rem #e2dfdf inset;
-    /*background: red;*/
 }
 
 .footIcon {

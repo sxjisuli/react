@@ -48,7 +48,8 @@ li {
 table,
 td,
 input {
-    font-size: 12px
+    font-size: 12px;
+    outline: none;
 }
 
 a {

@@ -42,22 +42,10 @@ export default class App extends Component {
         this.setState({
             currentIndex: id
         })
-        if(id==4){
-            var data = {id:3,name:'sam',age:36};
-            var path = {
-                    pathname:routerUrl,
-                    state:data,
-                }
-        }else{
-            var path = {
-                    pathname:routerUrl
-                } 
-        }
-        hashHistory.push(path)
+        hashHistory.push(routerUrl)
     }
     //在完成首次渲染之前调用（首次加载或刷新页面），根据url的hash值改变state，具体表现为侧边栏选中项与页面渲染页相对应
     componentWillMount() {
-        console.log(1)
         console.log(sessionStorage.getItem('currentindex'))
             if(sessionStorage.getItem('currentindex')){
                 this.setState({
@@ -70,13 +58,23 @@ export default class App extends Component {
             }
         }
     componentDidUpdate(prevProps, prevState) {
-        console.log(2)
+        console.log('componentDidUpdate')
     }
+    // componentWillReceiveProps(){
+    //     console.log('componentWillReceiveProps')
+    // }
+    // shouldComponentUpdate(){
+    //     console.log('shouldComponentUpdate')
+    // }
+    // componentWillUpdate(){
+    //     console.log('componentWillUpdate')
+    // }
+    // componentDidUpdate(){
+    //     console.log('componentDidUpdate')
+    // }
     render() {
-        console.log(this.state.currentIndex)
         var _this = this
         var footUrl = this.state.tabName.map((val, index) => {
-            // console.log(val)
             return <li key = { index } onClick = { this.tabChoiced.bind(_this, val.id,val.routerUrl) } >
                 <img src = { this.state.currentIndex === val.id ? val.activeUrl : val.imgUrl } alt = ""/>
                 <span className = { this.state.currentIndex === val.id ? 'activeclass' : 'imgclass' } > { val.name } </span></li>

@@ -1,0 +1,95 @@
+.newsTitle {
+    width: 100%;
+    height: 0.4rem;
+    text-align: center;
+    line-height: 0.5rem;
+    font-size: 0.18rem;
+    font-weight: bold;
+}
+
+.logoImg {
+    width: 100%;
+    padding: 0.15rem 0;
+    text-align: center;
+}
+
+.logoImg img {
+    width: 0.8rem;
+    height: 0.3rem;
+}
+
+.searchBox {
+    width: 2.2rem;
+    height: 0.3rem;
+    border: 0.01rem solid #ccc;
+    border-radius: 0.05rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    line-height: 0.3rem
+}
+
+.searchBox input {
+    width: 80%;
+    height: 85%;
+    border: none;
+}
+
+.searchBox button {
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    background: #fff;
+    outline: none;
+    border-left: 0.01rem solid #ccc;
+    border-top-right-radius: 0.05rem;
+    border-bottom-right-radius: 0.05rem;
+}
+
+.searchBox button img {
+    width: 70%;
+    height: 70%;
+}
+
+
+/*内容区导航*/
+
+.nav {
+    width: 100%;
+    width: 2.5rem;
+    height: 0.4rem;
+    background: cyan;
+    margin: 0 auto;
+    margin-top: 0.1rem;
+}
+
+.nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.14rem;
+}
+
+
+/*内容区*/
+
+.content {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.mainbox {
+    width: 500%;
+    display: flex;
+}
+
+.mainbox>div {
+    width: 100%;
+    /*height: 100%;*/
+}

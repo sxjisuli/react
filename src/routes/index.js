@@ -11,6 +11,7 @@ import Alert from '../homePage/alertPage/alert.js'
 export default (
   <Router history={hashHistory} >
       <Route path="/" component={App}>
+            <IndexRoute component={News}></IndexRoute>
           <route path="news" component={News}></route>
           <route path="alerts" component={Alert}></route>
           <route path="market" component={Market}></route>

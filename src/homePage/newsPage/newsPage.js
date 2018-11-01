@@ -22,11 +22,51 @@ export default class App extends Component {
     componentDidUpdate(prevProps, prevState) {
     
     }
+    navBtnClick(num){
+        console.log(num)
+    }
     render() {
         return (
             <div className="homePage">
+              <header>
+                  <p className="newsTitle">新闻</p>
+                  <div className="logoImg">
+                      <img src="../../assets/icon/logo.png" alt=""/>
+                  </div>
+                  <div className="searchBox">
+                      <input type="text"/>
+                      <button><img src="../../assets/icon/searchIcon.png" alt=""/></button>
+                  </div>
+              </header>
               <section>
-                这是新闻页面
+                  <div className="nav">
+                      <ul>
+                          <li onClick={this.navBtnClick.bind(this,1)}>新闻</li>
+                          <li onClick={this.navBtnClick.bind(this,2)}>社区</li>
+                          <li onClick={this.navBtnClick.bind(this,3)}>公众号</li>
+                          <li onClick={this.navBtnClick.bind(this,4)}>微博</li>
+                          <li onClick={this.navBtnClick.bind(this,5)}>峰会</li>
+                      </ul>
+                  </div>
+                  <div className="content">
+                        <div className="mainbox">
+                            <div className="newsBox">
+                                    新闻
+                            </div>
+                            <div className="community">
+                                社区
+                            </div>
+                            <div className="publicNumber">
+                                公众号
+                            </div>
+                            <div className="weiboBox">
+                                微博
+                            </div>
+                            <div className="summit">
+                                峰会
+                            </div>
+                        </div>
+                  </div>
               </section>
             </div>
         )
